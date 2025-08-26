@@ -1,0 +1,137 @@
+{
+  "basic_consultation": [
+    {
+      "role": "user",
+      "message": "Hi, I'm interested in learning about IVF",
+      "timestamp": "2025-08-26 10:00:00"
+    },
+    {
+      "role": "bot",
+      "message": "Hello! I'm FertilityAI Assistant, and I'm here to help guide you through IVF options. To provide you with the most relevant information, may I ask a few questions about your situation?",
+      "timestamp": "2025-08-26 10:00:05",
+      "features": [
+        "personalization",
+        "empathy"
+      ]
+    },
+    {
+      "role": "user",
+      "message": "Sure, what do you need to know?",
+      "timestamp": "2025-08-26 10:00:15"
+    },
+    {
+      "role": "bot",
+      "message": "Great! Let me ask about a few key factors:\n\n🎂 What's your age range?\n⏰ How long have you been trying to conceive?\n🔬 Have you had any fertility testing done?\n💊 Are you currently taking any medications?\n\nFeel free to share as much or as little as you're comfortable with.",
+      "timestamp": "2025-08-26 10:00:20",
+      "features": [
+        "structured_input",
+        "privacy_awareness",
+        "emojis"
+      ]
+    },
+    {
+      "role": "user",
+      "message": "I'm 32, we've been trying for 18 months, and I had some blood tests done recently",
+      "timestamp": "2025-08-26 10:01:00"
+    },
+    {
+      "role": "bot",
+      "message": "Thank you for sharing that information. At 32, you're in an excellent age range for IVF success! Women in your age group typically see success rates of 65-70% per fresh cycle at top clinics.\n\nSince you've been trying for 18 months and have had initial testing, IVF could be a great next step. Would you like me to:\n\n📊 Calculate your personalized success probability\n💰 Provide a detailed cost breakdown\n📅 Show you the typical IVF timeline\n🏥 Help you find qualified clinics nearby\n\nWhat would be most helpful right now?",
+      "timestamp": "2025-08-26 10:01:10",
+      "features": [
+        "personalized_statistics",
+        "quick_actions",
+        "guided_next_steps"
+      ]
+    }
+  ],
+  "voice_interaction": [
+    {
+      "role": "system",
+      "message": "Voice input detected: 'What are the side effects of IVF medications?'",
+      "timestamp": "2025-08-26 10:05:00",
+      "features": [
+        "voice_recognition"
+      ]
+    },
+    {
+      "role": "bot",
+      "message": "I heard your question about IVF medication side effects. This is a very common concern, and I'm glad you asked!\n\n🔊 **Voice Response Available** - Would you like me to read this aloud?\n\n**Common IVF Medication Side Effects:**\n\n💉 **Injection Site Reactions:**\n• Mild bruising or swelling\n• Temporary redness\n• Solution: Rotate injection sites, use ice packs\n\n🤰 **Hormonal Effects:**\n• Mild bloating or cramping\n• Mood changes (similar to PMS)\n• Breast tenderness\n• Headaches\n\n⚠️ **When to Contact Your Clinic:**\n• Severe abdominal pain\n• Shortness of breath\n• Rapid weight gain (>5 lbs in 3 days)\n\nWould you like specific information about any particular medications, or do you have other questions about the IVF process?",
+      "timestamp": "2025-08-26 10:05:15",
+      "features": [
+        "voice_output",
+        "structured_medical_info",
+        "safety_warnings",
+        "follow_up_options"
+      ]
+    }
+  ],
+  "document_analysis": [
+    {
+      "role": "user",
+      "message": "I'd like to upload my hormone test results for analysis",
+      "timestamp": "2025-08-26 10:10:00"
+    },
+    {
+      "role": "bot",
+      "message": "I'd be happy to help you understand your hormone test results! Please use the file upload button 📎 to share your lab report.\n\n**What I can help with:**\n✅ Explain what each hormone level means\n✅ Identify values that may impact fertility\n✅ Suggest questions to ask your doctor\n✅ Recommend next steps based on results\n\n**Privacy & Security:**\n🔒 Your documents are processed securely\n🚫 No data is stored permanently\n👨‍⚕️ This analysis supplements, not replaces, medical advice\n\nPlease upload your report when ready!",
+      "timestamp": "2025-08-26 10:10:05",
+      "features": [
+        "file_upload",
+        "privacy_assurance",
+        "medical_disclaimer"
+      ]
+    },
+    {
+      "role": "system",
+      "message": "File uploaded: hormone_panel_results.pdf",
+      "timestamp": "2025-08-26 10:10:30",
+      "features": [
+        "file_processing"
+      ]
+    },
+    {
+      "role": "bot",
+      "message": "Perfect! I've analyzed your hormone panel results. Here's what I found:\n\n📋 **Your Results Summary:**\n\n🟢 **Normal Ranges:**\n• TSH: 2.1 mIU/L (✓ Normal: 0.5-4.5)\n• Prolactin: 18 ng/mL (✓ Normal: 2-25)\n\n🟡 **Needs Attention:**\n• AMH: 1.2 ng/mL (Lower than ideal for your age)\n• FSH: 8.5 mIU/L (Slightly elevated)\n\n**What This Means:**\nYour results suggest diminished ovarian reserve, which is common and treatable. This actually makes IVF a good option as it can help maximize your remaining eggs.\n\n**Recommended Next Steps:**\n1. Discuss these results with a reproductive endocrinologist\n2. Consider additional testing (antral follicle count)\n3. Explore IVF protocols optimized for your hormone profile\n\nWould you like me to help you find specialists who work with similar hormone profiles?",
+      "timestamp": "2025-08-26 10:11:00",
+      "features": [
+        "document_analysis",
+        "medical_interpretation",
+        "personalized_recommendations",
+        "specialist_referral"
+      ]
+    }
+  ],
+  "multilingual_support": [
+    {
+      "role": "user",
+      "message": "Can you switch to Spanish? My husband speaks Spanish better",
+      "timestamp": "2025-08-26 10:15:00"
+    },
+    {
+      "role": "bot",
+      "message": "¡Por supuesto! Me complace ayudarles en español. 🇪🇸\n\n**Idioma cambiado a Español**\n\nSoy FertilityAI Assistant, su especialista en consultas de FIV. Estoy aquí para brindarles orientación personalizada y apoyo durante su proceso de fertilidad.\n\n¿En qué puedo ayudarles hoy? Pueden preguntarme sobre:\n\n🔬 Información sobre tratamientos de FIV\n💰 Calculadora de costos\n📊 Tasas de éxito personalizadas\n📅 Cronograma de tratamiento\n🏥 Clínicas especializadas\n💙 Apoyo emocional\n\n*Nota: Puedo cambiar entre idiomas en cualquier momento durante nuestra conversación.*",
+      "timestamp": "2025-08-26 10:15:10",
+      "features": [
+        "language_switching",
+        "multilingual_support",
+        "cultural_adaptation"
+      ]
+    },
+    {
+      "role": "user",
+      "message": "¿Cuáles son las tasas de éxito para mujeres de 35 años?",
+      "timestamp": "2025-08-26 10:15:30"
+    },
+    {
+      "role": "bot",
+      "message": "Excelente pregunta sobre las tasas de éxito para mujeres de 35 años.\n\n📊 **Tasas de Éxito de FIV a los 35 años:**\n\n🎯 **Por Ciclo Fresco:**\n• Transferencia de embrión fresco: ~55-60%\n• Embarazo clínico: ~50-55%\n• Nacimiento vivo: ~45-50%\n\n❄️ **Transferencia de Embrión Congelado (FET):**\n• Tasa de éxito: ~55-65%\n• Mejor resultado con embriones probados genéticamente\n\n📈 **Factores que Mejoran las Posibilidades:**\n• Estilo de vida saludable\n• Peso corporal óptimo\n• No fumar\n• Manejo del estrés\n• Clínica con experiencia\n\n**Datos Importantes:**\n- A los 35 años, la calidad de óvulos comienza a declinar gradualmente\n- Las pruebas genéticas preimplantacionales (PGT) pueden mejorar las tasas\n- Cada caso es único - sus resultados pueden variar\n\n¿Les gustaría que calcule una estimación personalizada basada en su situación específica?",
+      "timestamp": "2025-08-26 10:15:45",
+      "features": [
+        "multilingual_medical_content",
+        "detailed_statistics",
+        "personalized_follow_up"
+      ]
+    }
+  ]
+}
