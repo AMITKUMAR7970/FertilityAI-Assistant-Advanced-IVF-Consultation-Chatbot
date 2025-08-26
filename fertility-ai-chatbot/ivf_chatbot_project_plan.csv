@@ -1,0 +1,21 @@
+Phase,Task,Duration (Days),Priority,Resources,Start Date,End Date
+Phase 1: Planning & Architecture,Requirements Analysis & User Research,5,High,"BA, Architect, Stakeholders",2025-08-26,2025-08-31
+Phase 1: Planning & Architecture,HIPAA Compliance Planning,3,Critical,"Compliance Officer, Legal",2025-08-31,2025-09-03
+Phase 1: Planning & Architecture,Architecture Design,4,High,"Solution Architect, DevOps",2025-09-03,2025-09-07
+Phase 1: Planning & Architecture,Technology Stack Selection,2,Medium,"Tech Lead, Architect",2025-09-07,2025-09-09
+Phase 2: Core Development,AWS Infrastructure Setup,6,High,"DevOps Engineer, Cloud Architect",2025-09-09,2025-09-15
+Phase 2: Core Development,API Gateway Configuration,3,High,"Backend Developer, DevOps",2025-09-15,2025-09-18
+Phase 2: Core Development,Lambda Functions Development,8,Critical,"Backend Developer, Full Stack",2025-09-18,2025-09-26
+Phase 2: Core Development,Database Schema Design,3,Medium,"Database Developer, Backend",2025-09-26,2025-09-29
+Phase 3: AI Integration,Amazon Lex Bot Creation,7,Critical,"AI/ML Engineer, Backend",2025-09-29,2025-10-06
+Phase 3: AI Integration,NLP Model Training,10,Critical,"AI/ML Engineer, Data Scientist",2025-10-06,2025-10-16
+Phase 3: AI Integration,Voice Integration (Polly),5,Medium,"AI/ML Engineer, Backend",2025-10-16,2025-10-21
+Phase 4: Healthcare Features,IVF Knowledge Base Creation,12,Critical,"Healthcare SME, Content Creator",2025-10-21,2025-11-02
+Phase 4: Healthcare Features,Healthcare API Integrations,8,High,"Integration Developer, Healthcare SME",2025-11-02,2025-11-10
+Phase 4: Healthcare Features,Patient Journey Workflows,6,High,"UX Designer, Healthcare SME",2025-11-10,2025-11-16
+Phase 5: Testing & Compliance,Security Testing,5,Critical,"QA Engineer, Security Specialist",2025-11-16,2025-11-21
+Phase 5: Testing & Compliance,HIPAA Compliance Validation,7,Critical,"Compliance Officer, Security",2025-11-21,2025-11-28
+Phase 5: Testing & Compliance,Performance Testing,4,High,"QA Engineer, DevOps",2025-11-28,2025-12-02
+Phase 6: Deployment & Monitoring,Production Deployment,3,Critical,"DevOps Engineer, Platform",2025-12-02,2025-12-05
+Phase 6: Deployment & Monitoring,Monitoring Setup,2,High,"DevOps Engineer, SRE",2025-12-05,2025-12-07
+Phase 6: Deployment & Monitoring,Documentation & Training,3,Medium,"Technical Writer, Trainer",2025-12-07,2025-12-10

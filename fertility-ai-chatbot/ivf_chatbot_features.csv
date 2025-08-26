@@ -1,0 +1,19 @@
+Feature Category,Feature,Implementation Complexity,AWS Services Used,Business Value
+Core Chatbot,Natural Language Processing,Medium,"Amazon Lex, Lambda",High - Core functionality
+Core Chatbot,Multi-language Support,High,"Amazon Lex, Translate",High - Global reach
+Core Chatbot,Voice Interaction,Medium,"Amazon Polly, Lex",Medium - Accessibility
+Core Chatbot,Conversation Memory,Low,"DynamoDB, Lambda",High - User experience
+IVF Specific,IVF Treatment Information,High,"Lambda, S3, Knowledge Base",Critical - Domain expertise
+IVF Specific,Cost Calculator,Medium,"Lambda, External APIs",High - Decision support
+IVF Specific,Clinic Locator,Medium,"Lambda, Location Services",Medium - User convenience
+IVF Specific,Appointment Scheduling,High,"Lambda, Calendar APIs",High - Conversion driver
+Healthcare Compliance,HIPAA Compliance,Critical,"KMS, IAM, CloudTrail",Critical - Legal requirement
+Healthcare Compliance,Secure Data Encryption,High,"KMS, S3, DynamoDB",Critical - Patient trust
+Healthcare Compliance,Audit Logging,Medium,"CloudTrail, CloudWatch",High - Compliance tracking
+Technical Features,Real-time Processing,High,"Lambda, API Gateway",High - User satisfaction
+Technical Features,Serverless Architecture,Medium,"Lambda, API Gateway",High - Cost efficiency
+Technical Features,Auto-scaling,Low,"Auto Scaling, CloudWatch",Medium - Reliability
+Technical Features,API Integration,Medium,"API Gateway, Lambda",High - System integration
+Advanced Features,Sentiment Analysis,High,"Comprehend, Lambda",Medium - User insights
+Advanced Features,Predictive Analytics,High,"SageMaker, Lambda",High - Treatment optimization
+Advanced Features,Mobile App Support,Medium,"Amplify, Cognito",High - User accessibility
