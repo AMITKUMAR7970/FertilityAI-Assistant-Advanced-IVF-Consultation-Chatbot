@@ -1,0 +1,6 @@
+type,percentage,avg_duration_minutes,features_used
+Information Seeking,45,12,"['text_chat', 'quick_actions', 'educational_content']"
+Cost Planning,25,8,"['cost_calculator', 'insurance_checker', 'financing_options']"
+Clinic Research,15,15,"['clinic_finder', 'reviews', 'appointment_booking']"
+Emotional Support,10,20,"['support_chat', 'resources', 'community_links']"
+Document Analysis,5,6,"['file_upload', 'report_analysis', 'recommendations']"
