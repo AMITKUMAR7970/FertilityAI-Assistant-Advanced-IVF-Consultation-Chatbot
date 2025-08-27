@@ -1,0 +1,143 @@
+{
+  "session_types": [
+    {
+      "type": "Information Seeking",
+      "percentage": 45,
+      "avg_duration_minutes": 12,
+      "features_used": [
+        "text_chat",
+        "quick_actions",
+        "educational_content"
+      ]
+    },
+    {
+      "type": "Cost Planning",
+      "percentage": 25,
+      "avg_duration_minutes": 8,
+      "features_used": [
+        "cost_calculator",
+        "insurance_checker",
+        "financing_options"
+      ]
+    },
+    {
+      "type": "Clinic Research",
+      "percentage": 15,
+      "avg_duration_minutes": 15,
+      "features_used": [
+        "clinic_finder",
+        "reviews",
+        "appointment_booking"
+      ]
+    },
+    {
+      "type": "Emotional Support",
+      "percentage": 10,
+      "avg_duration_minutes": 20,
+      "features_used": [
+        "support_chat",
+        "resources",
+        "community_links"
+      ]
+    },
+    {
+      "type": "Document Analysis",
+      "percentage": 5,
+      "avg_duration_minutes": 6,
+      "features_used": [
+        "file_upload",
+        "report_analysis",
+        "recommendations"
+      ]
+    }
+  ],
+  "feature_usage": [
+    {
+      "feature": "Text Chat",
+      "usage_rate": 100,
+      "satisfaction": 4.7
+    },
+    {
+      "feature": "Voice Input",
+      "usage_rate": 35,
+      "satisfaction": 4.4
+    },
+    {
+      "feature": "File Upload",
+      "usage_rate": 20,
+      "satisfaction": 4.8
+    },
+    {
+      "feature": "Cost Calculator",
+      "usage_rate": 60,
+      "satisfaction": 4.6
+    },
+    {
+      "feature": "Language Switch",
+      "usage_rate": 15,
+      "satisfaction": 4.9
+    },
+    {
+      "feature": "Timeline Tracker",
+      "usage_rate": 45,
+      "satisfaction": 4.5
+    },
+    {
+      "feature": "Appointment Booking",
+      "usage_rate": 25,
+      "satisfaction": 4.3
+    }
+  ],
+  "user_journey_stages": [
+    {
+      "stage": "Awareness",
+      "duration_days": "1-7",
+      "interactions": 3,
+      "questions": [
+        "What is IVF?",
+        "Am I a candidate?",
+        "How much does it cost?"
+      ]
+    },
+    {
+      "stage": "Research",
+      "duration_days": "7-30",
+      "interactions": 8,
+      "questions": [
+        "Success rates?",
+        "Best clinics?",
+        "Insurance coverage?"
+      ]
+    },
+    {
+      "stage": "Decision",
+      "duration_days": "30-60",
+      "interactions": 12,
+      "questions": [
+        "Timeline?",
+        "Risks?",
+        "Alternatives?"
+      ]
+    },
+    {
+      "stage": "Preparation",
+      "duration_days": "60-90",
+      "interactions": 15,
+      "questions": [
+        "Next steps?",
+        "Medications?",
+        "Lifestyle changes?"
+      ]
+    },
+    {
+      "stage": "Treatment",
+      "duration_days": "90-120",
+      "interactions": 20,
+      "questions": [
+        "Side effects?",
+        "Monitoring?",
+        "Support resources?"
+      ]
+    }
+  ]
+}
