@@ -1,0 +1,6 @@
+stage,duration_days,interactions,questions
+Awareness,1-7,3,"['What is IVF?', 'Am I a candidate?', 'How much does it cost?']"
+Research,7-30,8,"['Success rates?', 'Best clinics?', 'Insurance coverage?']"
+Decision,30-60,12,"['Timeline?', 'Risks?', 'Alternatives?']"
+Preparation,60-90,15,"['Next steps?', 'Medications?', 'Lifestyle changes?']"
+Treatment,90-120,20,"['Side effects?', 'Monitoring?', 'Support resources?']"
