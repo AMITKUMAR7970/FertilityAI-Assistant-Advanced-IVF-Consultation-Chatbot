@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FertilityAI Assistant - Advanced IVF Consultation Chatbot</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <!-- Main Container -->
+    <div class="app-container">
+        <!-- Header -->
+        <header class="app-header">
+            <div class="header-content">
+                <div class="logo-section">
+                    <span class="bot-avatar">🤖</span>
+                    <div class="bot-info">
+                        <h1 class="bot-name">FertilityAI Assistant</h1>
+                        <span class="bot-status">Online • IVF Specialist</span>
+                    </div>
+                </div>
+                <div class="header-controls">
+                    <button class="btn btn--outline btn--sm" id="themeToggle">
+                        <span class="theme-icon">🌙</span>
+                    </button>
+                    <button class="btn btn--outline btn--sm" id="settingsBtn">
+                        <span>⚙️</span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <div class="sidebar-section">
+                    <h3>Quick Actions</h3>
+                    <div class="quick-actions" id="quickActions"></div>
+                </div>
+
+                <div class="sidebar-section">
+                    <h3>Advanced Features</h3>
+                    <div class="feature-buttons">
+                        <button class="feature-btn" id="voiceBtn">
+                            <span class="feature-icon">🎤</span>
+                            <span>Voice Input</span>
+                        </button>
+                        <button class="feature-btn" id="uploadBtn">
+                            <span class="feature-icon">📎</span>
+                            <span>Upload Files</span>
+                        </button>
+                        <button class="feature-btn" id="languageBtn">
+                            <span class="feature-icon">🌐</span>
+                            <span>Language</span>
+                        </button>
+                        <button class="feature-btn" id="calculatorBtn">
+                            <span class="feature-icon">💰</span>
+                            <span>Cost Calculator</span>
+                        </button>
+                        <button class="feature-btn" id="timelineBtn">
+                            <span class="feature-icon">📅</span>
+                            <span>Timeline</span>
+                        </button>
+                        <button class="feature-btn" id="appointmentBtn">
+                            <span class="feature-icon">📋</span>
+                            <span>Book Appointment</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="sidebar-section">
+                    <h3>Treatment Progress</h3>
+                    <div class="progress-tracker" id="progressTracker"></div>
+                </div>
+            </aside>
+
+            <!-- Chat Area -->
+            <main class="chat-container">
+                <div class="chat-messages" id="chatMessages">
+                    <div class="welcome-message">
+                        <div class="message bot-message">
+                            <div class="message-avatar">🤖</div>
+                            <div class="message-content">
+                                <div class="message-text">
+                                    Hello! I'm FertilityAI Assistant, your specialized IVF consultation companion. I'm here to provide personalized guidance, answer your questions, and support you throughout your fertility journey. How can I help you today?
+                                </div>
+                                <div class="message-time">12:00 PM</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Typing Indicator -->
+                <div class="typing-indicator" id="typingIndicator">
+                    <div class="message bot-message">
+                        <div class="message-avatar">🤖</div>
+                        <div class="message-content">
+                            <div class="typing-dots">
+                                <span></span><span></span><span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chat Input -->
+                <div class="chat-input-container">
+                    <div class="chat-input-wrapper">
+                        <input type="text" class="chat-input" id="chatInput" placeholder="Type your message here...">
+                        <button class="voice-record-btn" id="voiceRecordBtn">
+                            <span class="voice-icon">🎤</span>
+                        </button>
+                        <button class="send-btn" id="sendBtn">
+                            <span class="send-icon">➤</span>
+                        </button>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- Modals -->
+
+    <!-- Language Selection Modal -->
+    <div class="modal hidden" id="languageModal">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Select Language</h2>
+                <button class="modal-close" id="languageModalClose">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="language-grid" id="languageGrid"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cost Calculator Modal -->
+    <div class="modal hidden" id="calculatorModal">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content modal-large">
+            <div class="modal-header">
+                <h2>IVF Cost Calculator</h2>
+                <button class="modal-close" id="calculatorModalClose">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="calculator-form">
+                    <div class="form-group">
+                        <label class="form-label">Number of Cycles</label>
+                        <input type="range" id="cyclesRange" min="1" max="5" value="1" class="slider">
+                        <span class="range-value" id="cyclesValue">1</span>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Additional Services</label>
+                        <div class="checkbox-group">
+                            <label class="checkbox-item">
+                                <input type="checkbox" id="icsiCheck"> ICSI Treatment
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox" id="pgtCheck"> PGT Testing
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox" id="frozenCheck"> Frozen Transfer
+                            </label>
+                        </div>
+                    </div>
+                    <div class="cost-breakdown">
+                        <h3>Cost Breakdown</h3>
+                        <div class="cost-item">
+                            <span>Basic IVF Cycles:</span>
+                            <span id="basicCost">$12,000 - $15,000</span>
+                        </div>
+                        <div class="cost-item">
+                            <span>Medications:</span>
+                            <span id="medicationCost">$3,000 - $5,000</span>
+                        </div>
+                        <div class="cost-item" id="icsiCost" style="display: none;">
+                            <span>ICSI Treatment:</span>
+                            <span>$1,500 - $2,500</span>
+                        </div>
+                        <div class="cost-item" id="pgtCost" style="display: none;">
+                            <span>PGT Testing:</span>
+                            <span>$3,000 - $6,000</span>
+                        </div>
+                        <div class="cost-item" id="frozenCost" style="display: none;">
+                            <span>Frozen Transfer:</span>
+                            <span>$3,000 - $5,000</span>
+                        </div>
+                        <div class="cost-total">
+                            <strong>Total Estimate: <span id="totalCost">$15,000 - $20,000</span></strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Timeline Modal -->
+    <div class="modal hidden" id="timelineModal">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content modal-large">
+            <div class="modal-header">
+                <h2>IVF Treatment Timeline</h2>
+                <button class="modal-close" id="timelineModalClose">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="timeline-container" id="timelineContainer"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Appointment Modal -->
+    <div class="modal hidden" id="appointmentModal">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Book Consultation</h2>
+                <button class="modal-close" id="appointmentModalClose">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form class="appointment-form">
+                    <div class="form-group">
+                        <label class="form-label">Full Name</label>
+                        <input type="text" class="form-control" id="patientName" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Email</label>
+                        <input type="email" class="form-control" id="patientEmail" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Phone</label>
+                        <input type="tel" class="form-control" id="patientPhone" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Preferred Date</label>
+                        <input type="date" class="form-control" id="appointmentDate" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Preferred Time</label>
+                        <select class="form-control" id="appointmentTime" required>
+                            <option value="">Select time</option>
+                            <option value="09:00">9:00 AM</option>
+                            <option value="10:00">10:00 AM</option>
+                            <option value="11:00">11:00 AM</option>
+                            <option value="14:00">2:00 PM</option>
+                            <option value="15:00">3:00 PM</option>
+                            <option value="16:00">4:00 PM</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Consultation Type</label>
+                        <select class="form-control" id="consultationType" required>
+                            <option value="">Select type</option>
+                            <option value="initial">Initial Consultation</option>
+                            <option value="followup">Follow-up</option>
+                            <option value="second-opinion">Second Opinion</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--full-width">Book Appointment</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Settings Modal -->
+    <div class="modal hidden" id="settingsModal">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Settings</h2>
+                <button class="modal-close" id="settingsModalClose">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="settings-section">
+                    <h3>Display Preferences</h3>
+                    <div class="form-group">
+                        <label class="form-label">Font Size</label>
+                        <select class="form-control" id="fontSizeSelect">
+                            <option value="small">Small</option>
+                            <option value="medium" selected>Medium</option>
+                            <option value="large">Large</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="checkbox-item">
+                            <input type="checkbox" id="showTimestamps" checked> Show Message Timestamps
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label class="checkbox-item">
+                            <input type="checkbox" id="soundNotifications"> Sound Notifications
+                        </label>
+                    </div>
+                </div>
+                <div class="settings-section">
+                    <h3>Data & Privacy</h3>
+                    <button class="btn btn--outline btn--full-width" id="exportBtn">Export Conversation</button>
+                    <button class="btn btn--outline btn--full-width mt-8" id="clearBtn">Clear Chat History</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- File Upload -->
+    <input type="file" id="fileInput" accept=".pdf,.doc,.docx,.jpg,.png" style="display: none;">
+
+    <script src="app.js"></script>
+</body>
+</html>
